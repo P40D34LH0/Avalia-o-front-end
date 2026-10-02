@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Atendimento - WEGA'S VETERIAN</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Clínica <span>VetCare</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="equipe.html">Nossa Equipe</a></li>
+          <li><a href="contato.html" class="active">Contato / Agendamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-title">Solicitação de Atendimento</h2>
+
+    <div class="form-container">
+      <form id="contact-form" action="confirmacao.html" method="GET" novalidate>
+        
+        <div class="form-group">
+          <label for="nome">Seu Nome *</label>
+          <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+          <span class="error-message" id="error-nome">O nome é obrigatório.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+          <span class="error-message" id="error-email">Informe um e-mail válido.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+          <span class="error-message" id="error-telefone">O telefone é obrigatório.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="nome-animal">Nome do Animal *</label>
+          <input type="text" id="nome-animal" name="nome_animal" required placeholder="Nome do pet">
+          <span class="error-message" id="error-nome-animal">Informe o nome do animal.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo-animal">Tipo de Animal *</label>
+          <select id="tipo-animal" name="tipo_animal" required>
+            <option value="">Selecione...</option>
+            <option value="Cão">Cão</option>
+            <option value="Gato">Gato</option>
+            <option value="Ave">Ave</option>
+            <option value="Roedor">Roedor</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <span class="error-message" id="error-tipo-animal">Selecione o tipo de animal.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="servico">Serviço Desejado *</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço...</option>
+            <option value="Consulta Veterinária">Consulta Veterinária</option>
+            <option value="Vacinação">Vacinação</option>
+            <option value="Banho e Tosa">Banho e Tosa</option>
+            <option value="Exames Laboratoriais">Exames Laboratoriais</option>
+            <option value="Atendimento de Emergência">Atendimento de Emergência</option>
+            <option value="Acompanhamento Especializado">Acompanhamento Especializado</option>
+          </select>
+          <span class="error-message" id="error-servico">Selecione o serviço desejado.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Observações / Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva os sintomas ou observações importantes..."></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Enviar Solicitação</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Clínica Veterinária WEGA'S VETERIAN &copy; 2026 - Todos os direitos reservados.</p>
+    <p>Endereço: Av. Central do Pet, 1000 | Telefone: (79) 3333-4444</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
